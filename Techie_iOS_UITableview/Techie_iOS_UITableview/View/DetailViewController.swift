@@ -11,6 +11,15 @@ import UIKit
 class DetailViewController: UIViewController {
 
     @IBOutlet private weak var dismissButton: UIButton!
+    @IBOutlet private weak var cellName: UILabel!
+    var data: CellDto? {
+        didSet {
+            if let data = data {
+                cellName?.text = data.name
+                self.title = "Detail \(data.name)"
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

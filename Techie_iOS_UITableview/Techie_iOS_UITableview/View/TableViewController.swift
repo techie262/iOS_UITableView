@@ -47,6 +47,16 @@ extension TableViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController {
+        //               if let navigator = navigationController {
+        //                   navigator.pushViewController(viewController, animated: true)
+        //               }
+        //           }
+        let vc = DetailViewController()
+        vc.data = dataDisplay[indexPath.row]
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension TableViewController: TableviewContract.view {

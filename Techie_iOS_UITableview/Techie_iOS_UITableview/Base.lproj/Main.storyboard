@@ -46,11 +46,7 @@
                         <viewLayoutGuide key="safeArea" id="CvE-IM-NWN"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="X2A-p7-nua">
-                        <barButtonItem key="rightBarButtonItem" title="Detail" id="nSm-Oa-eKl">
-                            <connections>
-                                <segue destination="XsC-5e-hxd" kind="push" id="u7y-tt-KJI"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Detail" id="nSm-Oa-eKl"/>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="wcF-YO-yCs" id="B1z-NH-ad8"/>
@@ -60,7 +56,7 @@
             </objects>
             <point key="canvasLocation" x="-1275" y="-1021"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Detail-->
         <scene sceneID="VpK-ot-nR2">
             <objects>
                 <viewController id="XsC-5e-hxd" customClass="DetailViewController" customModule="Techie_iOS_UITableview" customModuleProvider="target" sceneMemberID="viewController">
@@ -81,16 +77,29 @@
                                     <action selector="invokeDissmissViewController:" destination="XsC-5e-hxd" eventType="touchUpInside" id="GvW-2q-fZP"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fA7-mz-fyb">
+                                <rect key="frame" x="24" y="104" width="366" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LE1-Yb-N6s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="enf-gZ-F4T" firstAttribute="centerY" secondItem="RMa-cT-kRc" secondAttribute="centerY" id="05Y-6C-kU0"/>
+                            <constraint firstItem="KR3-T8-EJE" firstAttribute="trailing" secondItem="fA7-mz-fyb" secondAttribute="trailing" constant="24" id="4So-vi-Ect"/>
+                            <constraint firstItem="fA7-mz-fyb" firstAttribute="leading" secondItem="KR3-T8-EJE" secondAttribute="leading" constant="24" id="54U-Sk-fcZ"/>
+                            <constraint firstItem="fA7-mz-fyb" firstAttribute="top" secondItem="KR3-T8-EJE" secondAttribute="top" constant="60" id="6Cf-Rw-36C"/>
                             <constraint firstItem="enf-gZ-F4T" firstAttribute="centerX" secondItem="RMa-cT-kRc" secondAttribute="centerX" id="bYQ-tu-cfr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KR3-T8-EJE"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Bp5-55-HVe"/>
+                    <navigationItem key="navigationItem" title="Detail" id="Bp5-55-HVe"/>
                     <connections>
+                        <outlet property="cellName" destination="fA7-mz-fyb" id="VIk-Cv-kJH"/>
                         <outlet property="dismissButton" destination="enf-gZ-F4T" id="J6N-za-oZu"/>
                     </connections>
                 </viewController>
