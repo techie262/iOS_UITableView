@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		94E65D862416373500A454BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65D852416373500A454BB /* AppDelegate.swift */; };
 		94E65D882416373500A454BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65D872416373500A454BB /* SceneDelegate.swift */; };
-		94E65D8A2416373500A454BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65D892416373500A454BB /* ViewController.swift */; };
+		94E65D8A2416373500A454BB /* TableviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65D892416373500A454BB /* TableviewController.swift */; };
 		94E65D8D2416373500A454BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E65D8B2416373500A454BB /* Main.storyboard */; };
 		94E65D8F2416373700A454BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94E65D8E2416373700A454BB /* Assets.xcassets */; };
 		94E65D922416373700A454BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E65D902416373700A454BB /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		94E65D822416373500A454BB /* Techie_iOS_UITableview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Techie_iOS_UITableview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E65D852416373500A454BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94E65D872416373500A454BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		94E65D892416373500A454BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94E65D892416373500A454BB /* TableviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableviewController.swift; sourceTree = "<group>"; };
 		94E65D8C2416373500A454BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94E65D8E2416373700A454BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94E65D912416373700A454BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,47 @@
 		94E65D842416373500A454BB /* Techie_iOS_UITableview */ = {
 			isa = PBXGroup;
 			children = (
+				94E65D9A241643B100A454BB /* View */,
+				94E65D9B241643C000A454BB /* Presenter */,
+				94E65D99241643A200A454BB /* Model */,
+				94E65D9C241644C000A454BB /* Contract */,
 				94E65D852416373500A454BB /* AppDelegate.swift */,
 				94E65D872416373500A454BB /* SceneDelegate.swift */,
-				94E65D892416373500A454BB /* ViewController.swift */,
 				94E65D8B2416373500A454BB /* Main.storyboard */,
 				94E65D8E2416373700A454BB /* Assets.xcassets */,
 				94E65D902416373700A454BB /* LaunchScreen.storyboard */,
 				94E65D932416373700A454BB /* Info.plist */,
 			);
 			path = Techie_iOS_UITableview;
+			sourceTree = "<group>";
+		};
+		94E65D99241643A200A454BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94E65D9A241643B100A454BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94E65D892416373500A454BB /* TableviewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94E65D9B241643C000A454BB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		94E65D9C241644C000A454BB /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Contract;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94E65D8A2416373500A454BB /* ViewController.swift in Sources */,
+				94E65D8A2416373500A454BB /* TableviewController.swift in Sources */,
 				94E65D862416373500A454BB /* AppDelegate.swift in Sources */,
 				94E65D882416373500A454BB /* SceneDelegate.swift in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TableviewController.swift
 //  Techie_iOS_UITableview
 //
 //  Created by Techie262 on 3/9/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TableviewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
