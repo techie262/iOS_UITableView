@@ -13,6 +13,14 @@
 		94E65D8D2416373500A454BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E65D8B2416373500A454BB /* Main.storyboard */; };
 		94E65D8F2416373700A454BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94E65D8E2416373700A454BB /* Assets.xcassets */; };
 		94E65D922416373700A454BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E65D902416373700A454BB /* LaunchScreen.storyboard */; };
+		94E65D9E24164A6000A454BB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65D9D24164A5F00A454BB /* DetailViewController.swift */; };
+		94E65DA024164D0200A454BB /* CellDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65D9F24164D0200A454BB /* CellDto.swift */; };
+		94E65DA224164ED800A454BB /* TableviewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65DA124164ED800A454BB /* TableviewContract.swift */; };
+		94E65DA92416544A00A454BB /* CustomizeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65DA72416544A00A454BB /* CustomizeTableViewCell.swift */; };
+		94E65DAA2416544A00A454BB /* CustomizeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94E65DA82416544A00A454BB /* CustomizeTableViewCell.xib */; };
+		94E65DAD2416592300A454BB /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65DAC2416592300A454BB /* UIColorExtensions.swift */; };
+		94E65DAF241660C900A454BB /* TableviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65DAE241660C900A454BB /* TableviewModel.swift */; };
+		94E65DB12416614D00A454BB /* TableviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65DB02416614D00A454BB /* TableviewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		94E65D8E2416373700A454BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94E65D912416373700A454BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94E65D932416373700A454BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94E65D9D24164A5F00A454BB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		94E65D9F24164D0200A454BB /* CellDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDto.swift; sourceTree = "<group>"; };
+		94E65DA124164ED800A454BB /* TableviewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableviewContract.swift; sourceTree = "<group>"; };
+		94E65DA72416544A00A454BB /* CustomizeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeTableViewCell.swift; sourceTree = "<group>"; };
+		94E65DA82416544A00A454BB /* CustomizeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomizeTableViewCell.xib; sourceTree = "<group>"; };
+		94E65DAC2416592300A454BB /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		94E65DAE241660C900A454BB /* TableviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableviewModel.swift; sourceTree = "<group>"; };
+		94E65DB02416614D00A454BB /* TableviewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableviewPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +76,7 @@
 				94E65D9B241643C000A454BB /* Presenter */,
 				94E65D99241643A200A454BB /* Model */,
 				94E65D9C241644C000A454BB /* Contract */,
+				94E65DAB241658F000A454BB /* Extensions */,
 				94E65D852416373500A454BB /* AppDelegate.swift */,
 				94E65D872416373500A454BB /* SceneDelegate.swift */,
 				94E65D8B2416373500A454BB /* Main.storyboard */,
@@ -73,6 +90,8 @@
 		94E65D99241643A200A454BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				94E65D9F24164D0200A454BB /* CellDto.swift */,
+				94E65DAE241660C900A454BB /* TableviewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -80,7 +99,9 @@
 		94E65D9A241643B100A454BB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				94E65DA3241653A300A454BB /* TableCell */,
 				94E65D892416373500A454BB /* TableviewController.swift */,
+				94E65D9D24164A5F00A454BB /* DetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -88,6 +109,7 @@
 		94E65D9B241643C000A454BB /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				94E65DB02416614D00A454BB /* TableviewPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -95,8 +117,26 @@
 		94E65D9C241644C000A454BB /* Contract */ = {
 			isa = PBXGroup;
 			children = (
+				94E65DA124164ED800A454BB /* TableviewContract.swift */,
 			);
 			path = Contract;
+			sourceTree = "<group>";
+		};
+		94E65DA3241653A300A454BB /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				94E65DA72416544A00A454BB /* CustomizeTableViewCell.swift */,
+				94E65DA82416544A00A454BB /* CustomizeTableViewCell.xib */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		94E65DAB241658F000A454BB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				94E65DAC2416592300A454BB /* UIColorExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94E65D922416373700A454BB /* LaunchScreen.storyboard in Resources */,
+				94E65DAA2416544A00A454BB /* CustomizeTableViewCell.xib in Resources */,
 				94E65D8F2416373700A454BB /* Assets.xcassets in Resources */,
 				94E65D8D2416373500A454BB /* Main.storyboard in Resources */,
 			);
@@ -171,8 +212,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				94E65D8A2416373500A454BB /* TableviewController.swift in Sources */,
+				94E65DA024164D0200A454BB /* CellDto.swift in Sources */,
 				94E65D862416373500A454BB /* AppDelegate.swift in Sources */,
+				94E65DA224164ED800A454BB /* TableviewContract.swift in Sources */,
+				94E65DB12416614D00A454BB /* TableviewPresenter.swift in Sources */,
 				94E65D882416373500A454BB /* SceneDelegate.swift in Sources */,
+				94E65DA92416544A00A454BB /* CustomizeTableViewCell.swift in Sources */,
+				94E65DAF241660C900A454BB /* TableviewModel.swift in Sources */,
+				94E65D9E24164A6000A454BB /* DetailViewController.swift in Sources */,
+				94E65DAD2416592300A454BB /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="-1275" y="-1021"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="VpK-ot-nR2">
             <objects>
-                <viewController id="XsC-5e-hxd" sceneMemberID="viewController">
+                <viewController id="XsC-5e-hxd" customClass="DetailViewController" customModule="Techie_iOS_UITableview" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RMa-cT-kRc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,6 +74,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="DissmissView"/>
+                                <connections>
+                                    <action selector="invokeDissmissViewController:" destination="XsC-5e-hxd" eventType="touchUpInside" id="GvW-2q-fZP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -84,6 +87,9 @@
                         <viewLayoutGuide key="safeArea" id="KR3-T8-EJE"/>
                     </view>
                     <navigationItem key="navigationItem" id="Bp5-55-HVe"/>
+                    <connections>
+                        <outlet property="dismissButton" destination="enf-gZ-F4T" id="J6N-za-oZu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j8a-am-0fs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
