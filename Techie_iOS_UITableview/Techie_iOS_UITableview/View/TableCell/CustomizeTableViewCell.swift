@@ -17,7 +17,7 @@ class CustomizeTableViewCell: UITableViewCell {
                 cellNameLabel?.text = data.name
                 if data.type == TypeCell.two {
                     cellNameLabel?.tintColor = UIColor.init(hexString: "#4D8BFF", alpha: 1)
-                    self.backgroundColor = UIColor.yellow
+                    self.backgroundColor = UIColor.lightGray
                 } else {
                     cellNameLabel?.tintColor = UIColor.black
                     self.backgroundColor = UIColor.clear
