@@ -15,14 +15,14 @@ class TableviewContract: NSObject {
 }
 
 protocol _TableView {
-    
+    func reloadData()
 }
 
 protocol _TablePresenter {
-    
+    func getData() -> [CellDto]
 }
 
 protocol _TableModel {
-    
+    func getData() -> [CellDto]
 }
 

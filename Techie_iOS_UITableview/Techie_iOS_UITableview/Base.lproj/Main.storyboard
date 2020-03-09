@@ -26,7 +26,7 @@
         <!--Home-->
         <scene sceneID="gax-Hb-5yT">
             <objects>
-                <viewController id="1h7-5h-hAL" customClass="TableviewController" customModule="Techie_iOS_UITableview" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1h7-5h-hAL" customClass="TableViewController" customModule="Techie_iOS_UITableview" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xow-ed-cIa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,6 +52,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="wcF-YO-yCs" id="B1z-NH-ad8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fnb-Zl-HaX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

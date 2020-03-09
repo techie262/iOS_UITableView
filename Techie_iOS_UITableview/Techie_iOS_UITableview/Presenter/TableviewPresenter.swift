@@ -9,5 +9,13 @@
 import UIKit
 
 class TableviewPresenter: TableviewContract.presenter {
-
+    private var model: TableviewContract.model
+    
+    required init(model: TableviewContract.model) {
+        self.model = model
+    }
+    
+    func getData() -> [CellDto] {
+        return model.getData()
+    }
 }
