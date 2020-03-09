@@ -18,6 +18,7 @@ class TableViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         dataDisplay = self.presenter.getData()
+        tableView?.register(UINib(nibName: "CustomizeTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomizeTableViewCell")
     }
     
 }
@@ -29,21 +30,8 @@ extension TableViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let dataCell = dataDisplay[indexPath.row]
-        switch dataCell.type {
-        case .one:
-            if let cell = getCellForRow(indexPath: indexPath) {
-                return cell
-            }
-        case .two:
-            if let cell = getCellForRow(indexPath: indexPath) {
-                return cell
-            }
-        }
-        return UITableViewCell()
-    }
-    
-    func getCellForRow(indexPath: IndexPath) -> CustomizeTableViewCell? {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomizeTableViewCell", for: indexPath) as? CustomizeTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomizeTableViewCell") as! CustomizeTableViewCell
+        cell.data = dataCell
         return cell
     }
 }
